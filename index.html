@@ -17,19 +17,31 @@
 		<link rel="stylesheet" href="/css/font-awesome.min.css" />
     </head>
     <body>
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
+        <nav th:fragment="navbar">
+            <div class="container-fluid">
+                <div>
+                    <nav class="navbar navbar-expand navbar-light bg-light">
+                        <a class="navbar-brand"> <img
+                            src="logo.png" style="width: 100px" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav" id="nav-links">
+                                <li class="nav-item"><a class="nav-link active"
+                                    aria-current="page" href="/" id="nav-link-home">Home page</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" id="nav-link-warehouse">O mnie</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" id="nav-link-report">Slider/Hero/Carousel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" id="nav-link-orders">Zadanie JavaScript 1</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" id="nav-link-report">Zadanie JavaScript 2</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" id="nav-link-report">Zadanie JavaScript 3</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
     </body>
 </html>
