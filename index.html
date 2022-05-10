@@ -15,6 +15,7 @@
 			crossorigin="anonymous"></script>
 		<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<link rel="stylesheet" href="/css/font-awesome.min.css" />
+        <title>O mnie</title>
     </head>
     <body>
         <nav th:fragment="navbar">
@@ -31,7 +32,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav" id="nav-links">
                                 <li class="nav-item"><a class="nav-link active"
-                                    aria-current="page" href="/" id="nav-link-home">O mnie</a></li>
+                                    aria-current="page" href="index.html" id="nav-link-home">O mnie</a></li>
                                 <li class="nav-item"><a class="nav-link" href="carousel.html" id="nav-link-report">Slider/Hero/Carousel</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#" id="nav-link-orders">Zadanie JavaScript 1</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#" id="nav-link-report">Zadanie JavaScript 2</a></li>
@@ -42,5 +43,30 @@
                 </div>
             </div>
         </nav>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                  O mnie
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>Tutaj jest napisane coś o mnie</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+        </div>
+        <footer style="position: absolute; bottom: 0px;">
+            <p id="date"></p>
+        </footer>
+
+        <script>
+
+            var sign = '&copy;';
+
+            var date = new Date();
+
+            document.getElementById("date").innerHTML=sign+' Kowalewski Mariusz '+date.getDay()+"/"+date.getMonth()+"/"+date.getFullYear();
+        </script>
     </body>
 </html>
