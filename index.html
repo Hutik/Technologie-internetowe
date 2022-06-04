@@ -18,7 +18,7 @@
         <title>O mnie</title>
     </head>
     <body>
-        <nav th:fragment="navbar">
+        <nav style="margin-bottom: 10px;">
             <div class="container-fluid">
                 <div>
                     <nav class="navbar navbar-expand navbar-light bg-light">
@@ -61,12 +61,8 @@
         </footer>
 
         <script>
-
             var sign = '&copy;';
-
-            var date = new Date();
-
-            document.getElementById("date").innerHTML=sign+' Kowalewski Mariusz '+date.getDay()+"/"+date.getMonth()+"/"+date.getFullYear();
+            document.getElementById("date").innerHTML=sign+' Kowalewski Mariusz '+((new Date().toLocaleDateString('pl-pl', {day:"numeric", month:"numeric", year:"numeric"})));
         </script>
     </body>
 </html>
