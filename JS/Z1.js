@@ -15,7 +15,7 @@ for(var i=0; i<array.length;i++){
         case 1:
             cb.innerHTML=cb.innerHTML+'<span style="border-bottom-style: double; margin-right: 10px;">'+array[i].toUpperCase()+'</span>';
             break;
-        case 2:
+        default:
             cb.innerHTML=cb.innerHTML+'<span style="text-decoration: underline; color: red; display: block;">'+array[i].toUpperCase()+'</span>';
             break;
     }
