@@ -49,10 +49,23 @@
                 <div class="card-header">
                   Zadanie 1
                 </div>
-                <div class="card-body" id="z1">
-                  
-
-
+                <div class="card-body" id="z2">
+                    <form onsubmit="count(event)">
+                        <div class="mb-3">
+                          <label for="inputA" class="form-label">A:</label>
+                          <input type="number" step="0.01" class="form-control" id="inputA">
+                        </div>
+                        <div class="mb-3">
+                          <label for="inputB" class="form-label">B:</label>
+                          <input type="number" step="0.01" class="form-control" id="inputB">
+                        </div>
+                        <div class="mb-3">
+                          <label for="inputC" class="form-label">C:</label>
+                          <input type="number" step="0.01" class="form-control" id="inputC">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-right: 10px;">Submit</button>
+                        <span id="result"></span>
+                    </form>
                 </div>
               </div>
         </div>
@@ -60,7 +73,7 @@
             <p id="date"></p>
         </footer>
 
-        <script src="JS/Z1.js"></script>
+        <script src="JS/Z2.js"></script>
         <script>
 
             var sign = '&copy;';
